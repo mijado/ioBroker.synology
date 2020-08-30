@@ -1074,7 +1074,7 @@ function sendPolling(namePolling){
                         } else if (~err.toString().indexOf('No such account or incorrect password')){
                             error('sendPolling syno[' + api + '][' + method + '] To use the adapter, the user must be in the Administrators group!', err);
                         } else {
-                            error('*sendPolling syno[' + api + '][' + method + ']', err);
+                            //error('*sendPolling syno[' + api + '][' + method + ']', err);
                         }
                         if (method === 'getPollingData' || method === 'listPackages'){
                             iteration = -1;
